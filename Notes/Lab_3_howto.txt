@@ -1,0 +1,12 @@
+./Scripts/GEM5ToMcPAT.py  Lab_2_results/456.hmmer_results/stats.txt Lab_2_results/456.hmmer_results/config.json ./mcpat/ProcessorDescriptionFiles/inorder_arm.xml -o ./mcpat/ProcessorDescriptionFiles/Lab_3_xml/456_default.xml
+
+./mcpat -infile ProcessorDescriptionFiles/Lab_3_xml/456_default.xml -print_level 5 > Lab_3_results/456_default_2.txt
+
+
+Πώς δούλεψε?
+
+1. Έχω περάσει τα αποτελέσματα του 2ου εργαστηρίου στον φάκελο mcpat (Lab_2_results)
+2. Τα xml files από την πρώτη εντολή τα βάζω μέσα στο ./mcpat/ProcessorDescriptionFiles/Lab_3_results
+3. Τα txt (τελικά αρχεία), τα βάζω σε φάκελο Lab_3_results μέσα στο mcpat
+
+ΠΡΟΣΟΧΗ έστι όπως έχω τους φακέλους και εκεί που είναι το Lab_2_results η πρώτη εντολή θα τρέξει στο mcpat ενώ η δεύτερη στο mcpat/mcpat
